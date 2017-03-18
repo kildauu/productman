@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Product Man</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900|Roboto:300,400,500,700,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/sss.css">
+</head>
+<body>
+	<div class="container">
+		<header class="main-header clearfix">
+			<a href="#" class="main-header_logo">
+				ProductMan
+			</a>
+			<ul class="main-header_nav">
+				<li>
+					<a href="#">Recent Work</a>
+				</li>
+				<li>
+					<a href="#">Featured Product</a>
+				</li>
+				<li> 
+					<div class="dropdown">
+						<i class="fa fa-bars" aria-hidden="true"></i> 
+						<ul class="dropdown-menu">
+							<li><a href="#">Beats by Dr.Dre</a></li>
+							<li><a href="#">Beats by Dr.Dre</a></li>
+							<li><a href="#">Beats by Dr.Dre</a></li>
+							<li><a href="#">Beats by Dr.Dre</a></li>
+							<li><a href="#">Beats by Dr.Dre</a></li>
+						</ul>
+					</div>	
+				</li>
+			</ul>
+		</header>
+		<main>
+			<div class="slider-container">
+				<div class="slider">
+					<div class="slide bg-headphones">
+						<div class="left-side">
+							<h2 class="bw"> Black&<br>White </h2>
+							<p class="slide-descr">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur iusto dolorum delectus, quia laudantium explicabo ab ducimus odit quas perspiciatis nihil sint inventore maxime consequuntur.
+							</p>
+							<a href="#" class="view-btn">View project</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<section class="featured-product">
+			<h2 class="fp_header">Featured Product</h2>
+			<img src="img/underline.png" class="fp_header_underline">
+			<p class="fp_descr">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			</p>
+			<div class="gallery clearfix">
+				<div class="beat_img beats-1">
+					<p class="beat-content">
+						Minimal Product <br> <span>Design</span>
+					</p>
+				</div>
+				<div class="beat_img beats-2">
+					<p class="beat-content">
+						Minimal Product <br> <span>Design</span>
+					</p>
+				</div>
+				<div class="beat_img beats-3">
+					<p class="beat-content">
+						Minimal Product <br> <span>Design</span>
+					</p>
+				</div>
+				<div class="beat_img beats-4">
+					<p class="beat-content">
+						Minimal Product <br> <span>Design</span>
+					</p>
+				</div>
+				<div class="beat_img beats-5">
+					<p class="beat-content">
+						Minimal Product <br> <span>Design</span>
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="news">
+			<h2 class="news-header">Productman News</h2>
+			<p class="news-descr">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			</p>
+		</section>
+		<section class="subscr">
+			<form class="subscr-form">
+				<label class="subscr-field">
+					<i class="fa fa-envelope-o" aria-hidden="true"></i>
+					<input placeholder="Enter your email adress" type="text"></input>
+					<button>SUBSCRIBE<i class="fa fa-caret-right" aria-hidden="true"></i></button>
+				</label>	
+			</form>
+		</section>
+		<footer>
+			<div class="social">
+				<ul class="social-list">
+					<li><a href="#"><img src="img/fb.png" alt="FB"></a></li>
+					<li><a href="#"><img src="img/tw.png" alt="TW"></a></li>
+					<li><a href="#"><img src="img/yt.png" alt="YT"></a></li>
+					<li><a href="#"><img src="img/me.png" alt="ME"></a></li>
+				</ul>
+				<p class="copyright">© Copyright <span>Your Company</span> ltd 2017. All Rights Reserved.</p>
+			</div>
+		</footer>
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script src="js/sss.min.js"></script>
+	<script>
+		$('.slider').sss({
+		slideShow : true, // Set to false to prevent SSS from automatically animating.startOn : 0, // Slide to display first. Uses array notation (0 = first slide).transition : 400, // Length (in milliseconds) of the fade transition.speed : 3500, // Slideshow speed in milliseconds.showNav : true // Set to false to hide navigation arrows.
+		});
+	</script>
+</body>
+</html>

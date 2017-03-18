@@ -1,0 +1,286 @@
+body {
+	background-color: #eee;
+	font-family: 'Roboto', sans-serif;
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+.clearfix:after {  /*-------Clearfix----------*/
+	content: '';
+	display: table;
+	clear: both;
+}
+.main-header {
+	line-height: 51px;
+	margin-top: 50px;
+}
+.main-header a {
+	text-decoration: none;
+	color: #303030;
+}
+.main-header_logo {
+	float: left;
+	color:  #303030;
+	font-size: 48px;
+	font-weight: 900;
+}
+.main-header_nav {
+	float: right;
+}
+.main-header_nav > li {
+	list-style: none;
+	float: left;
+	margin-left: 50px;
+}
+.dropdown {
+	position: relative;
+}
+.fa-bars:hover {
+	cursor: pointer;
+}
+.dropdown:hover .dropdown-menu {
+	max-height: 800px;
+	cursor: pointer; 
+}
+.dropdown-menu {
+	position: absolute;
+	max-height: 0;
+	overflow-y: hidden;
+	transition: max-height 0.7s ease;
+	background: transparent;
+	min-width: 120px;
+	right: 0;
+	top: 100%;
+	z-index: 2;
+}
+.dropdown-menu li {
+	padding-bottom: 10px;
+	height: 40px;
+	border-bottom: 1px solid #000;
+	text-align: center;
+	line-height: 40px;
+}
+.dropdown-menu:hover li:hover {
+	background-color: #ccc;
+}
+.dropdown-menu li:not(:first-of-type) {
+	margin-top: -1px;
+}
+.left-side {
+	width: 50%;
+	float: left;
+	position: relative;
+	text-align: right;
+	min-width: 600px;
+}	
+.bw {
+	font-family: 'Raleway', sans-serif;
+	color:  #303030;
+	font-size: 150px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: right;
+}
+.slide-descr {
+	font-family: 'Roboto';
+	color:  #303030;
+	font-size: 24px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 300;
+	line-height: 36px;
+	text-align: right;
+	padding-left: 35px;
+}
+.view-btn {
+	display: block;
+	font-family: 'Roboto';
+	color:  #e10011;
+	font-size: 24px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 600;
+	line-height: 1.5;
+	text-align: right;
+	text-decoration: none;
+}
+.slider {
+	padding-top: 70px;
+}
+.bg-headphones {
+	background: url('../img/headphones-bg.png');
+	background-repeat: no-repeat;
+	background-size: 300px auto;
+	background-position: 85% 50%;
+}
+.featured-product {
+	margin-top: 100px;
+	padding: 50px;
+	background-color: #fff;
+}
+.fp_header {
+	font-family: 'Raleway';
+	color: #303030;
+	font-size: 48px; /* Приближение из-за подстановки шрифтов */
+	font-weight: 900;/* Приближение из-за подстановки шрифтов */
+	text-align: center;
+}
+.fp_header_underline {
+	display: block;
+	margin: 10px auto;
+}
+.fp_descr {
+	width: 60%;
+	margin: 0 auto;
+	font-family: 'Raleway';
+	color: #303030;
+	font-size: 18px; /* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	line-height: 24px; /* Приближение из-за подстановки шрифтов */
+	text-align: center;
+}
+.beat_img {
+	margin: 30px 15px 0;
+	height: 390px;
+	float: left;
+	padding: 35px;
+	position: relative;
+	border-radius: 5px;
+	transition: 2s;
+}
+.beat-content {
+	transition: 1s;
+	opacity: 0;
+	position: absolute;
+	bottom: 45px;
+	font-family: 'Roboto';
+	color:  #ffffff;
+	font-size: 30px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 900;
+	line-height: 1.3;
+}
+.beat-content span {
+	display: inline-block;
+	border-bottom: 5px solid #fff;
+	padding-bottom: 5px;
+}
+.beat_img:hover {
+	background-color: #e10011;
+	background-image: none;
+	cursor: pointer;
+	transition: 2s;
+}
+.beat_img:hover .beat-content {
+	opacity: 1;
+	transition: 2s;
+}
+.beats-1 {
+	width: calc(66% - 30px);
+	background: url('../img/sound.jpg') no-repeat center center;
+	background-size: cover;
+}
+.beats-2 {
+	width: calc(33% - 30px);
+	background: url('../img/red-hp.jpg') no-repeat center center;
+	background-size: cover;
+}
+.beats-3 {
+	width: calc(33% - 30px);
+	background: url('../img/Layer 1.png') no-repeat center center;
+	background-size: cover;
+}
+.beats-4 {
+	width: calc(33% - 30px);
+	background: url('../img/shoe.jpg') no-repeat center center;
+	background-size: cover;
+}
+.beats-5 {
+	width: calc(33% - 30px);
+	background: url('../img/chair.jpg') no-repeat center center;
+	background-size: cover;
+}
+.news {
+	margin-top: 50px;
+	text-align: center;
+}
+.news-header {
+	font-family: 'Raleway';
+	color:  #303030;
+	font-size: 48px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 900;
+	text-transform: uppercase;
+}
+.news-descr {
+	font-family: 'Raleway';
+	color:  #303030;
+	font-size: 18px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	width: 50%;
+	margin: 20px auto;
+}
+.subscr {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.subscr-form {
+	text-align: center;
+	font-size: 0;
+	
+}
+.subscr-form input {
+	padding: 18px 0;
+	font-size: 18px;
+	text-indent: 45px;
+	max-width: 500px;
+	width: 30%;
+	border-radius: 25px 0 0 25px;
+	border: none;
+	outline: none;
+	font-family: Raleway;
+	color:  #979797;
+	font-size: 16px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	font-style: italic;
+}
+.subscr-form i,
+.subscr-form input
+.subscr-form button {
+	font-size: 16px;
+}
+.subscr-form .fa-envelope-o {
+	position: relative;
+	left: 30px;
+}
+.subscr-form button {
+	padding: 16px 25px;
+	background-color: #e10011;
+	color: #fff;
+	font-size: 18px;
+	outline: none;
+	border-radius: 0 25px 25px 0;
+	border: none;
+	font-family: Roboto;
+	font-weight: 900
+}
+.subscr-form button:hover {
+	cursor: pointer;
+	background-color: #e10011;
+	opacity: .8;
+}
+.subscr-form .fa-caret-right {
+	margin-left: 5px;
+}
+.social {
+	margin-top: 100px;
+	text-align: center;
+}
+.social-list li {
+	display: inline-block;
+}
+.copyright {
+	font-family: 'Raleway';
+	color:  #979797;
+	font-size: 18px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	margin-top: 50px;
+}
+.copyright span {
+	color: #303030;
+}
